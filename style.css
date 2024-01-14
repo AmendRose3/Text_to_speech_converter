@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding:0;
-    font-family: 'poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing:border-box;
 
 }
@@ -9,9 +9,96 @@
 .hero{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg,#010758,#490d61);
+    background: linear-gradient(45deg,#02371b,#38eca4);
     display: flex;
     align-items: center;
-    
+    justify-content: center;
+    flex-direction: column;
+    color: #02371b;
+}
 
+.hero h1{
+    font-size: 45px; 
+    font-weight: 500;
+    margin-top: -50px;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #074a38;
+    margin-bottom: 50px;
+}
+
+/* h1 b {
+    display: inline-block;
+    background-color: #074a38;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+} */
+
+
+textarea {
+    width: 600px;  /* Set the width of the textarea to 600 pixels */
+    height: 250px;  /* Set the height of the textarea to 250 pixels */
+    background: #b4edd7;  /* Set the background color to a light greenish color */
+    color: rgb(3, 32, 6);  /* Set the text color to azure */
+    font-size: 15px;  /* Set the font size to 15 pixels */
+    border: 0;  /* Remove the default border */
+    padding: 20px;  /* Set padding inside the textarea (20px on all sides) */
+    border-radius: 10px;  /* Apply rounded corners with a border-radius of 10px */
+    resize: none;  /* Disable the ability to resize the textarea */
+    outline: none;  /* Remove the default outline style */
+    margin-bottom: 30px;  /* Add margin at the bottom of the textarea */
+}
+
+textarea::placeholder {
+    font-size: 15px;  /* Set the font size of the placeholder text to 15 pixels */
+    color: rgb(1, 16, 10);  /* Set the color of the placeholder text using an RGB value */
+}
+
+
+.row{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background: #02371b;  /* Set the background color to a dark greenish color */
+    color: azure;  /* Set the text color to azure */
+    font-weight: 400;  /* Set the font weight to 400 (normal) */
+    font-size: 16px;  /* Set the font size to 16 pixels */
+    padding: 10px 30px;  /* Set padding inside the button (10px on top/bottom, 30px on left/right) */
+    border-radius: 35px;  /* Apply rounded corners with a border-radius of 35px */
+    border: 0;  /* Remove the default border */
+    outline: 0;  /* Remove the default outline style */
+    cursor: pointer;  /* Set the cursor to a pointer, indicating it's clickable */
+    display: flex;  /* Use flexible box layout */
+    align-items: center;  /* Align the content of the button vertically at the center */
+}
+
+
+button img{
+    width: 16px;
+    margin-right:10px ;
+
+}
+select {
+    flex: 1;  /* Use flexible box layout with a flex value of 1 */
+    color: azure;  /* Set the text color to azure */
+    background: #02371b;  /* Set the background color to a dark greenish color */
+    height: 50px;  /* Set the height of the select element */
+    padding: 0 20px;  /* Set padding inside the select element (0 on top/bottom, 20px on left/right) */
+    outline: 0;  /* Remove the default outline style */
+    border: 0;  /* Remove the default border */
+    border-radius: 35px;  /* Apply rounded corners with a border-radius of 35px */
+    appearance: none;  /* Remove default styles in some browsers to allow custom styling */
+    background-image: url(images/dropdown.png);  /* Set a custom background image for the dropdown arrow */
+    background-repeat: no-repeat;  /* Ensure the background image is not repeated */
+    background-size: 15px;  /* Set the size of the background image */
+    background-position-x: calc(100% - 20px);  /* Position the background image horizontally */
+    background-position-y: calc(20px);  /* Position the background image vertically */
 }
